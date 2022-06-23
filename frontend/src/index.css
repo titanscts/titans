@@ -1,0 +1,256 @@
+@import "antd/dist/antd.variable.min.css";
+/* You can add global styles to this file, and also import other style files */
+:root {
+  --purple: #5e2572 !important;
+  --green: #14a800 !important;
+  --white: #ffffff !important;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #e7e4e4;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #aaa4a4;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(114, 111, 111);
+}
+
+.purple {
+  color: var(--purple) !important;
+}
+
+.green {
+  color: var(--green) !important;
+}
+
+.bg-purple {
+  background-color: var(--purple) !important;
+}
+
+.bg-green {
+  background-color: var(--green) !important;
+}
+
+.bg-white {
+  background-color: var(--white) !important;
+}
+
+.border-purple {
+  border: 1px solid var(--purple) !important;
+}
+
+body {
+  background-color: #f1f2f7 !important;
+}
+
+.btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.btn:focus:not(:focus-visible) {
+  outline: 0;
+  box-shadow: none;
+}
+
+.gradient {
+  color: #dc3545 !important;
+}
+
+.bg-gradient {
+  background-color: #dc3545 !important;
+}
+
+.bg-grey {
+  background-color: #f1f2f7 !important;
+}
+
+.text-white {
+  color: white !important;
+}
+
+.text-green {
+  color: var(--green) !important;
+}
+
+.fs-4 {
+  font-size: 4% !important;
+}
+
+.fs-7 {
+  font-size: 7px !important;
+}
+
+.fs-8 {
+  font-size: 8px !important;
+}
+
+.fs-9 {
+  font-size: 9px !important;
+}
+
+.fs-10 {
+  font-size: 10px !important;
+}
+
+.fs-11 {
+  font-size: 11px !important;
+}
+
+.fs-12 {
+  font-size: 12px !important;
+}
+
+.fs-13 {
+  font-size: 13px !important;
+}
+
+.fs-14 {
+  font-size: 14px !important;
+}
+
+.fs-15 {
+  font-size: 15px !important;
+}
+
+.fs-16 {
+  font-size: 16px !important;
+}
+
+.fs-17 {
+  font-size: 17px !important;
+}
+
+.fs-18 {
+  font-size: 18px !important;
+}
+
+.fs-19 {
+  font-size: 19px !important;
+}
+
+.fs-20 {
+  font-size: 20px !important;
+}
+
+.mt-6 {
+  margin-top: 3rem !important;
+}
+
+.mt-7 {
+  margin-top: 3.25rem !important;
+}
+
+.mt-8 {
+  margin-top: 3.5rem !important;
+}
+
+.mt-9 {
+  margin-top: 3.75rem !important;
+}
+
+.mt-10 {
+  margin-top: 4rem !important;
+}
+
+.mt-12 {
+  margin-top: 4.5rem !important;
+}
+
+.mt-14 {
+  margin-top: 5rem !important;
+}
+
+.mt-16 {
+  margin-top: 5.5rem !important;
+}
+
+.mt-18 {
+  margin-top: 6rem !important;
+}
+
+.mt-20 {
+  margin-top: 6.5rem !important;
+}
+
+.mb-6 {
+  margin-bottom: 3rem !important;
+}
+
+.mb-7 {
+  margin-bottom: 3.25rem !important;
+}
+
+.mb-8 {
+  margin-bottom: 3.5rem !important;
+}
+
+.mb-9 {
+  margin-bottom: 3.75rem !important;
+}
+
+.mb-10 {
+  margin-bottom: 4rem !important;
+}
+
+.mb-16 {
+  margin-bottom: 5.5rem !important;
+}
+
+.mb-18 {
+  margin-bottom: 6rem !important;
+}
+
+.ant-form-item {
+  margin: 0 0 10px;
+}
+
+.ant-ribbon {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* .ant-segmented-item {
+  min-height: 28px;
+  padding: 0 11px;
+  line-height: 28px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  word-break: keep-all;
+  background-color: #ffffff;
+}
+
+.ant-segmented-item-selected {
+  min-height: 28px;
+  padding: 0 11px;
+  line-height: 28px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  word-break: keep-all;
+  color: var(--white);
+  background-color: var(--green);
+}
+
+.ant-segmented-item-selected:hover {
+  color: var(--white);
+} */
+
+.ant-table table { font-size: 16px; }
+
+.slick-prev:before,
+.slick-next:before {
+  color: var(--green) !important;
+}

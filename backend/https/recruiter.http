@@ -1,0 +1,80 @@
+@hostname = http://localhost:9999/recruiter
+
+@id = "62af3215b8e37bb2da0e58a9"
+
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyYWYzMjE1YjhlMzdiYjJkYTBlNThhOSIsImVtYWlsIjoidGVzdEBnLmNvbSIsInR5cGUiOiJyZWNydWl0ZXIiLCJpYXQiOjE2NTU3MzMxMzQsImV4cCI6MTY1NjMzNzkzNH0.Cp7TaILjarZnic1daMO6pVA0was4FNC2Zzeys7zGPZE
+
+
+post {{hostname}}/register
+Content-Type: application/json
+{
+    "recruiter" : {
+        "name": "Patel Gopal",
+        "email": "gopalPatel1fdf2jrr@gmail.com",
+        "password": "password",
+        "mobile": 9123456789,
+        "bio": "I am recruiter from a company",
+        "companyName" : "TCSdao"
+    }
+}
+###
+
+POST {{hostname}}/login
+Content-Type: application/json
+
+{
+    "email": "test@g.com",
+    "password": "testtt"
+}
+###
+
+post {{hostname}}/postJob
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "job" : {
+        "jobId": "abcdefgh1234",
+        "jobTitle": "SWE",
+        "role": "Eng" ,
+        "responsibility" : "Engeeniring",
+        "companyName": "Accenture",
+        "experience":2,
+        "minSalary" : 3,
+        "maxSalary" : 4,
+        "noOfPositions":3,
+        "location": ["abc","CDE"],
+        "skillsAndQualification":"Angular",
+        "degree":"UG",
+        "companyInfo":"Company",
+        "employmentType":"FullTime",
+        "industryType":"Spftware",
+        "searchKeyword":"SWE",
+        "jobDesc":"JobDEsc",
+        "applicantsApplied": [],
+        "applicantsSaved":[]
+    }
+}
+###
+
+
+GET {{hostname}}/getJobsByRecruiter
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+###
+
+GET {{hostname}}/getJobById/62ae163fda2d79f570ce4efd
+Authorization: Bearer {{token}}
+Content-Type: application/json
+###
+
+GET {{hostname}}/deleteJobById/62aefe638373474ce8241a1d
+Authorization: Bearer {{token}}
+Content-Type: application/json
+###
+
+
+GET {{hostname}}/
+
+###

@@ -1,0 +1,15 @@
+{
+  "files.exclude": {
+    "backend\\.env": true,
+    "backend\\package-lock.json": true,
+    "backend\\Procfile": true,
+    "frontend\\build": true,
+    "frontend\\.env.development": true,
+    "frontend\\.env.production": true,
+    "README.md": true
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  }
+}

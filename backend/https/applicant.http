@@ -1,0 +1,124 @@
+@hostname = http://localhost:9999/applicant
+@id = "61f028f9f2120edbc5fa8a21"
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImhvbWlvbmFwcEBnbWFpbC5jb20iLCJ0eXBlIjoiYXBwbGljYW50IiwiaWF0IjoxNjU1ODczMjU2LCJleHAiOjE2NTU4ODA0NTZ9.HNZpdpmH-mjD01rROnKRrwLfqWs8HDekZBxpws11jbA
+
+post {{hostname}}/signUp
+Content-Type: application/json
+
+{
+    "applicant" : {
+        "fullName": "Ronak Makwana",
+        "mobile": "9723445038",
+        "email": "homionapp@gmail.com",
+        "password": "Homion@123",
+        "skills": "Dixit",
+        "isExperienced": true,
+        "address": {
+            "line1": "laxmi",
+            "line2": "radhe",
+            "city": "Ahm",
+            "state": "Gujarat",
+            "country": "India",
+            "postalcode": 382114
+        },
+        "education" : {
+            "university": "gtu",
+            "passingYear": 2021,
+            "graduated": true,
+            "graduateSchool": "LD",
+            "noOfYearsAttended": 4,
+            "skills_qualification": "skill quali",
+            "certification": "certi"
+        },
+        "employment": {
+            "currEmployer": "curr",
+            "currDesignation": "currD",
+            "currJobDescription": "currJ",
+            "currExpInMonths": 12,
+            "prevEmployer": "prev",
+            "prevJobDescription": "prevD",
+            "prevExpInMonths": 15
+        }
+    }
+}
+###
+
+post {{hostname}}/login
+Content-Type: application/json
+
+{
+    "email": "homionapp@gmail.com",
+    "password": "applicant"
+
+}
+###
+
+post {{hostname}}/careerTip
+Content-Type: application/json
+
+{
+    "careerTip": {
+        "tip": "Focus on your strengths and use that as an advantage to capitalize on the tasks at hand.",
+        "tipURL": "https://www.biospace.com/article/career-advice/"
+    }
+}
+###
+
+get {{hostname}}/homeDetails
+###
+
+get {{hostname}}/filterData
+###
+
+get {{hostname}}/search?skill=angu&location=mumbai&company=.com
+###
+
+post {{hostname}}/filterJobs
+Content-Type: application/json
+
+{
+    "locations": ["Mumbai"],
+    "companies": ["Homion"],
+    "salaries": ["60-70", "20-50"]
+}
+###
+
+get {{hostname}}/applicantByToken
+Authorization: Bearer {{token}}
+###
+
+get {{hostname}}/applicantById/62af4abfdcf0f226f54d62da
+Authorization: Bearer {{token}}
+###
+
+put {{hostname}}/changeSaveJob/62aed19385bdc7ff16045336/false
+Authorization: Bearer {{token}}
+Content-Type: application/json
+###
+
+put {{hostname}}/changeApplyJob/62aefe638373474ce8241a1d/true
+Authorization: Bearer {{token}}
+Content-Type: application/json
+###
+
+get {{hostname}}/isJobSavedAndApplied/62aed19385bdc7ff16045336
+Authorization: Bearer {{token}}
+###
+
+post {{hostname}}/forgotPassword
+Content-Type: application/json
+
+{
+    "email": "homionapp@gmail.com",
+    "type": "applicant"
+}
+###
+
+post {{hostname}}/resetPassword
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "password": "applicant"
+}
+
